@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/249f1b8630.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="flex justify-center h-svh items-center">
+        <div class="artboard phone-3 bg-gradient-to-br from-[#46E1B4] to-[#454A6C] rounded-2xl p-6 relative">
+            <div class="flex items-center gap-8">
+                <input id="input-field" type="text" placeholder="location here..."
+                    class="placeholder:text-black/70 placeholder:font-medium rounded-full px-6 py-4 w-full outline-none">
+                <div id="search-btn" class="bg-white p-4 rounded-full hover:bg-slate-400">
+                    <i class="fa-solid fa-magnifying-glass h-6 w-6 text-center text-lg"></i>
+                </div>
+            </div>
+            <div id="content-container" class="flex items-center flex-col mt-10 hidden">
+                <img id="Weather-img" src="https://img.icons8.com/?size=100&id=CTt0KHBuppnA&format=png&color=000000" alt="">
+                <h2 id="condition" class="text-2xl text-white font-bold capitalize text-center mt-4">sunny</h2>
+                <h1 id="temp" class="text-6xl font-bold text-white text-center mt-8">40<sup>o</sup>F</h1>
+                <h1 id="city" class="text-4xl text-white font-medium capitalize text-center mt-4">Berlin</h1>
+                <div class="flex items-center justify-between w-full absolute bottom-0 p-6">
+                    <div class="flex items-center gap-2">
+                        <img src="https://img.icons8.com/?size=100&id=18585&format=png&color=000000" alt=""
+                        class="w-12">
+                        <div>
+                            <h2 id="humidity" class="text-2xl text-white font-medium capitalize text-center">90%</h2>
+                            <h2 class="text-xl text-white font-normal capitalize text-center">humidity</h2>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="https://img.icons8.com/?size=100&id=NVDH376Ybnwv&format=png&color=000000" alt="" class="w-12">
+                        <div>
+                            <h2 id="windSpeed" class="text-2xl text-white font-medium capitalize text-center">2.68 km/h</h2>
+                            <h2 class="text-xl text-white font-normal capitalize text-center">wind speed</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/js2.js"></script>
+</body>
+
+</html>
